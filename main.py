@@ -16,10 +16,6 @@ def get_request():
         else:
             print("URLリクエスト失敗:", status_code)
 
-        # レスポンスをデコード
-        response_data = response.read().decode("utf-8")
-        print("返信データ:", response_data)
-
     except urllib.error.URLError as e:
         print("URLエラー:", e.reason)
     except Exception as e:
